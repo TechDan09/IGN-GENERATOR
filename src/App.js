@@ -2,27 +2,24 @@ import React from 'react';
 import Particles from 'react-particles-js';
 import Header from './Components/Header';
 import Body from './Components/Body';
-import NameGenerator from './Components/NameGenerator';
+// import NameGenerator from './Components/NameGenerator';
 import './App.css';
 import 'tachyons';
+import generateName from "sillyname";
 
 class App extends React.Component {
+  newIgn = generateName();
   constructor(props){
     super(props);
     this.state ={
-      newIgn: ''
+      newIgn: this.newIgn
     };
   }
   componentDidMount() {
-    fetch('http://localhost:3001/')
-      .then(res => {
-      console.log(res);
-      return res.json()
-      })
-      .then(newIgn => { 
-        console.log(newIgn); 
-        this.setState(newIgn)
-        });
+    // const newIgn = generateName();
+    // console.log(newIgn);
+    // this.setState(newIgn);
+    // I'm not sure how setState works
   }
   
   render() {
