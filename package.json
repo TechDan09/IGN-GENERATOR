@@ -1,19 +1,23 @@
 {
+  "homepage": "https://TechDan09.github.io/IGN-GENERATOR",
   "name": "gamer-tag",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-particles-js": "^2.7.0",
     "react-scripts": "3.0.1",
-    "tachyons": "^4.11.1",
-    "sillyname": "^0.1.0"
+    "sillyname": "^0.1.0",
+    "tachyons": "^4.11.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

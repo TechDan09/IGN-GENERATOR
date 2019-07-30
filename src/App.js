@@ -15,13 +15,11 @@ class App extends React.Component {
     };
     this.changeIgn = this.changeIgn.bind(this);
   } 
-
   
   changeIgn() {
     this.newIgn = generateName();
     this.setState({newIgn: this.newIgn});
   }
-
 
   render() {
     return (
@@ -70,4 +68,5 @@ class App extends React.Component {
     );
   }
 }
+
 export default App;
