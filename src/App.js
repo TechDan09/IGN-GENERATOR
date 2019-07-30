@@ -12,30 +12,16 @@ class App extends React.Component {
     super(props);
     this.state ={
       newIgn: this.newIgn
-      // newIgn: "" failed attempt to update state
     };
-    this.onButtonClick = this.onButtonClick.bind(this);
-
+    this.changeIgn = this.changeIgn.bind(this);
   } 
+
+  
   changeIgn() {
     this.newIgn = generateName();
     this.setState({newIgn: this.newIgn});
   }
 
-  // onButtonClick(e) {
-  //   this.setState({newIgn: this.newIgn})
-  // } 
-  //failed attempt to update state
-
-  // This was not working because, while you were setting the state, the original value of newIgn was not changing.
-
-
-  onButtonClick(e){
-    this.changeIgn();
-  }
-  //I dont know why I put this here instead of in the button directly but whatever its sweet passing methods from components to another. Ok this is one very long comment
-  
-  // Long comments are inherently bad. Whatever "inherently" means
 
   render() {
     return (
@@ -78,7 +64,7 @@ class App extends React.Component {
             }
         }} 
       />
-      <Body onButtonClick={this.onButtonClick} newIgn={this.state.newIgn}/>
+      <Body changeIgn={this.changeIgn} newIgn={this.state.newIgn}/>
       <p className="footer-credits"> <i>Developed by TechDan & Jerry Navi</i> </p>
       </React.Fragment>
     );
