@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/IGN-GENERATOR/static/css/main.597c3811.chunk.css",
+    "main.js": "/IGN-GENERATOR/static/js/main.bb4a5c31.chunk.js",
+    "main.js.map": "/IGN-GENERATOR/static/js/main.bb4a5c31.chunk.js.map",
+    "runtime~main.js": "/IGN-GENERATOR/static/js/runtime~main.cbbf4836.js",
+    "runtime~main.js.map": "/IGN-GENERATOR/static/js/runtime~main.cbbf4836.js.map",
+    "static/css/2.31dafeb2.chunk.css": "/IGN-GENERATOR/static/css/2.31dafeb2.chunk.css",
+    "static/js/2.36f35a48.chunk.js": "/IGN-GENERATOR/static/js/2.36f35a48.chunk.js",
+    "static/js/2.36f35a48.chunk.js.map": "/IGN-GENERATOR/static/js/2.36f35a48.chunk.js.map",
+    "index.html": "/IGN-GENERATOR/index.html",
+    "precache-manifest.dd4a0f7af2ef307001729b8d6828892b.js": "/IGN-GENERATOR/precache-manifest.dd4a0f7af2ef307001729b8d6828892b.js",
+    "service-worker.js": "/IGN-GENERATOR/service-worker.js",
+    "static/css/2.31dafeb2.chunk.css.map": "/IGN-GENERATOR/static/css/2.31dafeb2.chunk.css.map",
+    "static/css/main.597c3811.chunk.css.map": "/IGN-GENERATOR/static/css/main.597c3811.chunk.css.map"
+  }
+}
