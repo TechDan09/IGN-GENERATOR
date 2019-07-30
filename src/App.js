@@ -2,26 +2,24 @@ import React from 'react';
 import Particles from 'react-particles-js';
 import Header from './Components/Header';
 import Body from './Components/Body';
-// import NameGenerator from './Components/NameGenerator';
 import './App.css';
 import 'tachyons';
 import generateName from "sillyname";
 
 class App extends React.Component {
-  newIgn = generateName();
+  newIgn = generateName()
   constructor(props){
     super(props);
     this.state ={
       newIgn: this.newIgn
     };
+    this.onButtonClick = this.onButtonClick.bind(this);
+  } 
+
+  onButtonClick(e){
+    window.location.reload();    
   }
-  componentDidMount() {
-    // const newIgn = generateName();
-    // console.log(newIgn);
-    // this.setState(newIgn);
-    // I'm not sure how setState works
-  }
-  
+
   render() {
     return (
       <React.Fragment>
@@ -63,8 +61,8 @@ class App extends React.Component {
             }
         }} 
       />
-      <Body newIgn={this.state.newIgn}/>
-      <p className="noob"> <i>ps. carnival is a noob</i> </p>
+      <Body onButtonClick={this.onButtonClick} newIgn={this.state.newIgn}/>
+      <p className="footer-credits"> <i>Developed by TechDan & Jerry Navi</i> </p>
       </React.Fragment>
     );
   }
