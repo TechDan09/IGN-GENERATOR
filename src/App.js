@@ -12,13 +12,21 @@ class App extends React.Component {
     super(props);
     this.state ={
       newIgn: this.newIgn
+      // newIgn: "" failed attempt to update state
     };
     this.onButtonClick = this.onButtonClick.bind(this);
   } 
 
+  // onButtonClick(e) {
+  //   this.setState({newIgn: this.newIgn})
+  // } 
+  //failed attempt to update state
+
+
   onButtonClick(e){
-    window.location.reload();    
+    window.location.reload(); 
   }
+  //I dont know why I put this here instead of in the button directly but whatever its sweet passing methods from components to another. Ok this is one very long comment
 
   render() {
     return (
